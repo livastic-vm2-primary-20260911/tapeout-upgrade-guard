@@ -1,0 +1,57 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="color-scheme" content="dark">
+<title>TapeOut Upgrade Guard — X Layer Read-Only Evidence</title>
+<meta name="description" content="Read-only X Layer TapeOut factory and beacon upgrade drift checker with pinned block proof.">
+<link rel="stylesheet" href="style.css">
+<script src="app.js" defer></script>
+</head>
+<body>
+<div class="layout">
+<header class="top">
+<a class="brand" href="./"><span class="brandmark">T<span>✦</span></span><span>TapeOut<small>UPGRADE GUARD</small></span></a>
+<nav><a href="#evidence">Evidence</a><a href="#compare">Compare</a><a href="#method">Method</a><a href="latest.json" download>Raw JSON ↗</a></nav>
+</header>
+<main>
+<section class="hero">
+<div class="eyebrow"><span class="dot"></span> X LAYER MAINNET · READ ONLY</div>
+<h1>Know what changed<br><em>before you trust the upgrade.</em></h1>
+<p class="lead">Proof of deployed bytecode and implementation pointers for TapeOut factory and beacon contracts. One pinned block. Independently reproducible.</p>
+<div class="links"><a class="primary" href="#evidence">Inspect evidence ↘</a><a class="secondary" href="https://github.com/livastic-vm2-primary-20260911/tapeout-upgrade-guard">Source code ↗</a></div>
+<p class="warn">Independent, AI-assisted owner-operated prototype. Not affiliated with TapeOut or OKX. Not a security audit, exploit report, continuously running monitor, or investment recommendation.</p>
+</section>
+<section id="evidence" class="section">
+<div class="title"><div><p class="eyebrow">01 / ONCHAIN EVIDENCE</p><h2>Verified runtime snapshot</h2></div><span id="state" class="badge">LOADING</span></div>
+<div class="metrics">
+<div><span>CHAIN ID</span><strong id="chain">—</strong><small>X Layer mainnet</small></div>
+<div><span>PINNED BLOCK</span><strong id="block">—</strong><small id="time">UTC timestamp</small></div>
+<div><span>COMPONENTS</span><strong id="count">—</strong><small>Factory / Beacons</small></div>
+<div><span>SPENT / SIGNED</span><strong>0</strong><small>Read-only collection</small></div>
+</div>
+<p class="eyebrow spacer">ACTUAL RUNTIME ADDRESSES · CODE SHA-256</p>
+<div class="component-grid" id="components"><p>Loading locally published evidence…</p></div>
+<div class="signal-box"><div><strong>Documentation vs. live pointer</strong><p>A third-party deployment reference may be stale. A difference is a signal for further verification—not proof of a malicious upgrade.</p></div><span id="reference">Checking…</span></div>
+<p class="source-note" id="source-note"></p>
+<p class="hashline">Pinned block hash: <code id="block-hash">—</code></p>
+</section>
+<section id="compare" class="section">
+<div class="title"><div><p class="eyebrow">02 / OFFLINE COMPARISON</p><h2>Did the implementation change?</h2></div><span class="badge">BROWSER-LOCAL</span></div>
+<p class="description">Upload two locally generated JSON snapshots. Files stay in your browser; no web3 wallet, token, tracking SDK or backend upload. Compare the EIP-1967 pointer, beacon implementation pointers, runtime code hashes and owner() observations.</p>
+<div class="inputs"><label>Earlier evidence <input type="file" id="before" accept=".json,application/json"></label><label>Later evidence <input type="file" id="after" accept=".json,application/json"></label><button id="compare-button">Compare →</button></div>
+<div id="result" class="result" role="status" aria-live="polite">Select two locally generated snapshots to compare them. An unchanged pair does not rule out intermediate changes.</div>
+</section>
+<section id="method" class="section">
+<div class="title"><div><p class="eyebrow">03 / METHODS &amp; LIMITS</p><h2>Evidence, not inference</h2></div></div>
+<div class="steps"><article><b>01</b><h3>Pin a block</h3><p>Read chain ID 196, block number, hash and UTC timestamp.</p></article><article><b>02</b><h3>Resolve pointers</h3><p>Factory EIP-1967 implementation storage and each beacon implementation() response.</p></article><article><b>03</b><h3>Hash code</h3><p>SHA-256 of runtime bytes for each proxy, beacon and referenced implementation.</p></article><article><b>04</b><h3>Compare snapshots</h3><p>Surface changed addresses, code fingerprints and optional control observations.</p></article></div>
+<div class="terminal"><div>REPRODUCE WITH NO WALLET</div><pre>python3 -B tapeout_guard.py snapshot --out evidence/now.json
+python3 -B tapeout_guard.py diff evidence/previous.json evidence/now.json</pre></div>
+<div class="limits"><strong>This is not a security guarantee.</strong><p>Contract safety, code-to-source matching, timelock/multisig signers, intermediate upgrades, payment backing, fee safety and treasury reserves are not established by this prototype. The deployment source is a third-party reference and should be cross-verified. RPC responses are not consensus proofs. SHA-256 fingerprints are not Ethereum keccak-256 hashes.</p></div>
+</section>
+</main>
+<footer><span>Independent public QA • One Cursor, AI-assisted</span><span>No signing • No gas • No deposits • No keys</span></footer>
+</div>
+</body>
+</html>

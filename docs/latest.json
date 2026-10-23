@@ -1,0 +1,89 @@
+{
+  "components": {
+    "circuit_beacon": {
+      "beacon": {
+        "address": "0xf70d1ed4f62cf3780157b0b421b7e2f45bd0991c",
+        "fingerprint_hash": "SHA-256, not Ethereum keccak-256",
+        "runtime_bytes": 619,
+        "runtime_sha256": "ecfed7a79dc46024e78f76be3f995c9fcecc2d8e730829b7cf03aef47be9e1a2"
+      },
+      "implementation": {
+        "address": "0x977f217887e085d298cb3819cdad5a0ee35f29b2",
+        "fingerprint_hash": "SHA-256, not Ethereum keccak-256",
+        "runtime_bytes": 12562,
+        "runtime_sha256": "0a5259a8b5a69197cde6dce70a4446fe807b622277bdae9e79919d5d8e9828a5"
+      },
+      "kind": "IBeacon implementation()",
+      "owner_call": {
+        "address": null,
+        "state": "READ"
+      }
+    },
+    "factory": {
+      "eip1967_admin_slot_address": null,
+      "implementation": {
+        "address": "0xb41c1e7602eb5734be2430b72178ccb814a5293d",
+        "fingerprint_hash": "SHA-256, not Ethereum keccak-256",
+        "runtime_bytes": 7734,
+        "runtime_sha256": "23cf919fc23a6524e45382fcdf0b334e7e8102f85d684683064834147cbbd8fe"
+      },
+      "kind": "UUPS/EIP-1967 proxy (reported, verify by code)",
+      "owner_call": {
+        "address": "0xb3d85b42a045c1a88d800cad0f55d2566a4d3138",
+        "state": "READ"
+      },
+      "proxy": {
+        "address": "0x1f09daefa827f02cbb40967cc91b259763760761",
+        "fingerprint_hash": "SHA-256, not Ethereum keccak-256",
+        "runtime_bytes": 130,
+        "runtime_sha256": "d5e534164f234bee90da236f5e4fd09d4333dfbecd0591d4f93af1ee1713dd31"
+      }
+    },
+    "transistor_beacon": {
+      "beacon": {
+        "address": "0x1059ad62cabb6a6925bb65aa617300556c60a51b",
+        "fingerprint_hash": "SHA-256, not Ethereum keccak-256",
+        "runtime_bytes": 619,
+        "runtime_sha256": "ecfed7a79dc46024e78f76be3f995c9fcecc2d8e730829b7cf03aef47be9e1a2"
+      },
+      "implementation": {
+        "address": "0x265bf10fab9ddec0ee0a649c6b9db845f1b9a06b",
+        "fingerprint_hash": "SHA-256, not Ethereum keccak-256",
+        "runtime_bytes": 9265,
+        "runtime_sha256": "0dd303efab5484381b739b1f29cd7f87b0b6554787979211b5bcf30ae168b8d6"
+      },
+      "kind": "IBeacon implementation()",
+      "owner_call": {
+        "address": null,
+        "state": "READ"
+      }
+    }
+  },
+  "generated_utc": "2026-10-23T10:22:29+00:00",
+  "limitations": [
+    "This is not a security audit or a guarantee against malicious upgrades.",
+    "SHA-256 runtime fingerprints are not keccak-256 Ethereum code hashes.",
+    "owner() is optional and cannot by itself prove access control or Safe signer policy.",
+    "Off-chain fund backing, governance timelocks, fee safety, bytecode source verification and code semantics are not proved.",
+    "These deployed addresses originate from third-party public documentation; verify before using for funds.",
+    "No wallet authentication, on-chain transactions or personally identifying user data is used."
+  ],
+  "network": {
+    "block_hash": "0x3fc1c32eff2b4b91347c3f37e06876116eedb5ca509b3cdc5aba71909fed6bea",
+    "block_number": 73981911,
+    "block_timestamp_utc": "2026-10-23T10:22:27+00:00",
+    "chain_id": 196,
+    "name": "X Layer",
+    "rpc_origin": "https://rpc.xlayer.tech"
+  },
+  "schema": "tapeout-upgrade-guard-v1",
+  "source": {
+    "chain_explorer": "https://www.oklink.com/xlayer",
+    "deployment_listing": "https://github.com/NetLayerLabs/Cerebr/blob/main/TAPEOUT.md",
+    "external_doc_checked_date_utc": "2026-10-23",
+    "external_doc_vs_live_implementation": "MISMATCH_RECHECK_SOURCE_AND_UPGRADE_HISTORY",
+    "external_documented_factory_implementation": "0x74956236ab64ed143933040b4137e8a352e4d17b",
+    "source_truth": "Public RPC bytecode and storage at one pinned block",
+    "standard": "https://eips.ethereum.org/EIPS/eip-1967"
+  }
+}

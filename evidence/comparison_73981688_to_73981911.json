@@ -1,0 +1,9 @@
+{
+  "caution": "No difference between two observations is not proof nothing changed between blocks.",
+  "chain_id": 196,
+  "code_or_control_changes": [],
+  "earlier_block": 73981688,
+  "later_block": 73981911,
+  "schema": "tapeout-upgrade-diff-v1",
+  "status": "NO_OBSERVED_DIFFERENCE"
+}
