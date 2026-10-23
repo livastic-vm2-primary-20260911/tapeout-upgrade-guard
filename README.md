@@ -116,3 +116,15 @@ No guarantee the competition will award this tool any prize.
 This independent on-chain factory/beacon integrity product was developed in
 the October 2026 event window and is not the same as the previously
 submitted CPU0 per-circuit report under a separate PayAPI Market account.
+
+
+### Buyer-initiated paid review (not yet sold)
+
+The public dashboard includes an **optional request-for-quote** contact for
+independent buyers. Indicative seller asks are 9 USDC for a narrow public
+deployment drift check, and 19 USDC for one expanded, human-reviewed
+release evidence report. These are *not* approved budgets, orders,
+invoices or income. No buyer has purchased the service. Payment method,
+scope, AI disclosure, timeline, human owner review and legal terms must
+be agreed separately before any paid deliverable. Free verification
+remains available without payment, self-trades or wallet connection.

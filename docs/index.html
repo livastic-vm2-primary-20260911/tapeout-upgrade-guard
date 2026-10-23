@@ -13,7 +13,7 @@
 <div class="layout">
 <header class="top">
 <a class="brand" href="./"><span class="brandmark">T<span>✦</span></span><span>TapeOut<small>UPGRADE GUARD</small></span></a>
-<nav><a href="demo.mp4">82s demo ↗</a><a href="#evidence">Evidence</a><a href="#compare">Compare</a><a href="#method">Method</a><a href="latest.json" download>Raw JSON ↗</a></nav>
+<nav><a href="demo.mp4">82s demo ↗</a><a href="#evidence">Evidence</a><a href="#compare">Compare</a><a href="#service">Paid pilot</a><a href="#method">Method</a><a href="latest.json" download>Raw JSON ↗</a></nav>
 </header>
 <main>
 <section class="hero">
@@ -43,8 +43,21 @@
 <div class="inputs"><label>Earlier evidence <input type="file" id="before" accept=".json,application/json"></label><label>Later evidence <input type="file" id="after" accept=".json,application/json"></label><button id="compare-button">Compare →</button></div>
 <div id="result" class="result" role="status" aria-live="polite">Select two locally generated snapshots to compare them. An unchanged pair does not rule out intermediate changes.</div>
 </section>
+<section id="service" class="section" aria-labelledby="service-title">
+<div class="title"><div><p class="eyebrow">03 / OPTIONAL PAID PILOT</p><h2 id="service-title">Need a change-evidence report?</h2></div><span class="badge">QUOTE ONLY · NO SALE CLAIMED</span></div>
+<p class="description">For an X Layer integrator maintaining an owner-authorized public deployment: request a bounded, evidence-first release comparison. Public core verification stays free. You pay only under separately agreed terms; no wallet connection or token transfer is needed to inquire.</p>
+<div class="offer-grid">
+<article><small>STARTER CHECK · PROPOSED PRICE</small><strong>9 USDC</strong><p>Two pinned X Layer snapshots, implementation-pointer drift table, code hash comparison, concise factual exceptions. Buyer provides public addresses only.</p></article>
+<article><small>RELEASE EVIDENCE REPORT · PROPOSED PRICE</small><strong>19 USDC</strong><p>Starter output plus a source-reference discrepancy table, one bounded question-and-answer round and a human-reviewed delivery if scope is agreed.</p></article>
+</div>
+<div class="offer-contact">
+<div><strong>Request scope and payment terms</strong><p>Briefly describe your public contract addresses, approximate release window and the one decision the evidence must support. AI assistance will be disclosed. No live exploits, financial guarantees, private production access or security certification are offered. A written agreement, owner eligibility and supported payout network must precede delivery.</p></div>
+<a class="primary quote-link" href="mailto:onecursor1@gmail.com?subject=TapeOut%20Upgrade%20Guard%20-%20paid%20pilot%20scope%20request&amp;body=Hello%2C%20I%20would%20like%20a%20quote%20for%20a%20read-only%20X%20Layer%20deployment%20change%20report.%0APublic%20contract%20addresses%3A%0AExpected%20scope%3A%0AProposed%20fee%2Fpayment%20network%3A%0A">Ask for a quote ↗</a>
+</div>
+<p class="offer-note">These are seller-proposed indicative fees, not customer-approved budgets. Confirmed clients: 0. Confirmed sales: 0. Wallet signing, deposits, up-front setup fees and secret keys are not requested.</p>
+</section>
 <section id="method" class="section">
-<div class="title"><div><p class="eyebrow">03 / METHODS &amp; LIMITS</p><h2>Evidence, not inference</h2></div></div>
+<div class="title"><div><p class="eyebrow">04 / METHODS &amp; LIMITS</p><h2>Evidence, not inference</h2></div></div>
 <div class="steps"><article><b>01</b><h3>Pin a block</h3><p>Read chain ID 196, block number, hash and UTC timestamp.</p></article><article><b>02</b><h3>Resolve pointers</h3><p>Factory EIP-1967 implementation storage and each beacon implementation() response.</p></article><article><b>03</b><h3>Hash code</h3><p>SHA-256 of runtime bytes for each proxy, beacon and referenced implementation.</p></article><article><b>04</b><h3>Compare snapshots</h3><p>Surface changed addresses, code fingerprints and optional control observations.</p></article></div>
 <div class="terminal"><div>REPRODUCE WITH NO WALLET</div><pre>python3 -B tapeout_guard.py snapshot --out evidence/now.json
 python3 -B tapeout_guard.py diff evidence/previous.json evidence/now.json</pre></div>
