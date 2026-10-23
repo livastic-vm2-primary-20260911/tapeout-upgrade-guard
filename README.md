@@ -52,6 +52,8 @@ Source snapshots saved in this repository:
   hash 0xf6e3991f463bfa226a5ec5673a4d8fa2547a1b1da3bf670a2ea916499eb41ebf.
 - evidence/20261023_xlayer_mainnet_pinned.json: block 73,981,911,
   hash 0x3fc1c32eff2b4b91347c3f37e06876116eedb5ca509b3cdc5aba71909fed6bea.
+- evidence/20261023_xlayer_customer_prospect_1958.json: latest pin from Oct 23, block 73,984,413, hash 0x334ed4a6da7c4796599c6d40ec221f70b6c7c5e2d60e54e7cc31198af2017429. This is read-only historical evidence, not a continuously updating monitor.
+- evidence/comparison_73981688_to_73984413.json: no observed change in selected implementation/code/control fields across those sampled blocks.
 - evidence/comparison_73981688_to_73981911.json:
   NO_OBSERVED_DIFFERENCE in pointer/code/owner read fields across these two
   blocks. Does NOT rule out intermediate changes.
