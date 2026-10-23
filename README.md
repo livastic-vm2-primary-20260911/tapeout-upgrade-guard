@@ -9,6 +9,12 @@ wallet connection nor signing, gas, staking, deposits, KYC or private keys.
 **Static evidence dashboard:**
 https://livastic-vm2-primary-20260911.github.io/tapeout-upgrade-guard/
 
+**82-second silent, captioned demo video (under the three-minute limit):**
+https://livastic-vm2-primary-20260911.github.io/tapeout-upgrade-guard/demo.mp4
+
+The video is a screen-and-evidence walkthrough, not a third-party testimonial
+or a claim of continuous live monitoring, paid orders or contest acceptance.
+
 ## What it checks
 
 At a pinned X Layer block (chain ID 196), the CLI reads the EIP-1967
